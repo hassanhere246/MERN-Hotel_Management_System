@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuxuryStay - Hotel Management System</title>
+    <script>
+      (function() {
+        const theme = localStorage.getItem('appTheme') || 'light';
+        const root = document.documentElement;
+        if (theme === 'dark') root.classList.add('dark');
+        if (theme === 'glass') root.classList.add('glass');
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
